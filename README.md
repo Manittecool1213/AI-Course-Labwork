@@ -21,12 +21,17 @@ Solutions for the five AI course lab assignments. Each lab has its own folder, w
 │       ├── warehouse_agent.py
 │       └── test_warehouse_agent.py
 ├── 03_search/
+│   ├── answers.md
+│   └── src/
+│       ├── warehouse_search.py
+│       ├── test_warehouse_search.py
+│       └── search_experiments.py
 ├── 04_logic/
 ├── 05_bayesian_networks/
 └── README.md
 ```
 
-`03_search`, `04_logic` and `05_bayesian_networks` are not started yet.
+`04_logic` and `05_bayesian_networks` are not started yet.
 
 ## Code
 
@@ -39,6 +44,11 @@ Solutions for the five AI course lab assignments. Each lab has its own folder, w
 - `src/warehouse_agent.py`: goal-based warehouse navigation agent using BFS.
 - `src/test_warehouse_agent.py`: pytest tests for the agent.
 
+### 03_search
+- `src/warehouse_search.py`: A* and BFS search agents for the warehouse map, with swappable heuristics.
+- `src/test_warehouse_search.py`: pytest tests, including generated grids checked against an independent reference.
+- `src/search_experiments.py`: the tests, BFS vs A* comparison and heuristic study reported in `answers.md`.
+
 ## Running
 
 ```
@@ -49,6 +59,11 @@ python three_class_net.py
 
 cd ../../02_agents/src
 python warehouse_agent.py
+pytest
+
+cd ../../03_search/src
+python warehouse_search.py
+python search_experiments.py
 pytest
 ```
 
