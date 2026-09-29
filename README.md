@@ -27,11 +27,19 @@ Solutions for the five AI course lab assignments. Each lab has its own folder, w
 │       ├── test_warehouse_search.py
 │       └── search_experiments.py
 ├── 04_logic/
+│   ├── answers.md
+│   └── src/
+│       ├── planner.py
+│       ├── test_planner.py
+│       ├── logic_experiments.py
+│       ├── prolog_verifier.py
+│       ├── planner.pl
+│       └── road.pl
 ├── 05_bayesian_networks/
 └── README.md
 ```
 
-`04_logic` and `05_bayesian_networks` are not started yet.
+`05_bayesian_networks` is not started yet.
 
 ## Code
 
@@ -49,6 +57,13 @@ Solutions for the five AI course lab assignments. Each lab has its own folder, w
 - `src/test_warehouse_search.py`: pytest tests, including generated grids checked against an independent reference.
 - `src/search_experiments.py`: the tests, BFS vs A* comparison and heuristic study reported in `answers.md`.
 
+### 04_logic
+- `src/planner.py`: a logical planner for the warehouse robot, with actions defined by preconditions and effects, BFS search, and a step-by-step plan verifier.
+- `src/test_planner.py`: pytest tests, including random problems checked against an independent exhaustive search.
+- `src/logic_experiments.py`: the applicability checks, hand-made plan and Tests A-C reported in `answers.md`.
+- `src/planner.pl`, `src/road.pl`: the Prolog knowledge bases for the optional extension.
+- `src/prolog_verifier.py`: checks the moves in a plan against `planner.pl` (needs SWI-Prolog).
+
 ## Running
 
 ```
@@ -65,6 +80,12 @@ cd ../../03_search/src
 python warehouse_search.py
 python search_experiments.py
 pytest
+
+cd ../../04_logic/src
+python planner.py
+python logic_experiments.py
+python prolog_verifier.py
+pytest
 ```
 
-The neural models code needs PyTorch and matplotlib, and the agents tests need pytest.
+The neural models code needs PyTorch and matplotlib, and the tests need pytest. The Prolog parts of the logic lab need SWI-Prolog (`swipl`); their tests are skipped if it is not installed.
