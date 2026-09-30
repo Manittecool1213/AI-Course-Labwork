@@ -1,0 +1,28 @@
+# 20 sentences sampled from the first-order model (seed 0)
+the dog sat on the mat
+the rug
+the rug
+the dog sat on the dog ran to the park
+the cat sat on the park
+the mat
+the cat ran to the dog sat on the cat sat on the rug
+the dog sat on the rug
+the rug
+the dog sat on the dog sat on the rug
+the cat sat on the cat ran to the park
+the rug
+the mat
+the park
+the rug
+the park
+the cat sat on the park
+the cat sat on the dog sat on the cat sat on the dog sat on the rug
+the park
+the park
+
+# 5 sentences generated greedily from the first-order model
+the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat
+the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat
+the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat
+the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat
+the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat

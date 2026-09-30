@@ -1,0 +1,28 @@
+# 20 sentences sampled from the second-order model (seed 0)
+the dog sat on the mat
+the cat sat on the mat
+the cat ran to the park
+the dog ran to the park
+the dog sat on the rug
+the dog sat on the mat
+the cat sat on the rug
+the dog sat on the rug
+the dog ran to the park
+the dog sat on the rug
+the cat sat on the mat
+the dog ran to the park
+the cat ran to the park
+the cat sat on the rug
+the cat sat on the rug
+the dog sat on the mat
+the dog ran to the park
+the dog sat on the mat
+the cat sat on the rug
+the cat sat on the mat
+
+# 5 sentences generated greedily from the second-order model
+the cat sat on the mat
+the cat sat on the mat
+the cat sat on the mat
+the cat sat on the mat
+the cat sat on the mat

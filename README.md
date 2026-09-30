@@ -36,10 +36,16 @@ Solutions for the five AI course lab assignments. Each lab has its own folder, w
 │       ├── planner.pl
 │       └── road.pl
 ├── 05_bayesian_networks/
+│   ├── answers.md
+│   └── src/
+│       ├── language_model.py
+│       ├── test_language_model.py
+│       ├── bn_experiments.py
+│       └── outputs/
+│           ├── generated_first_order.txt
+│           └── generated_second_order.txt
 └── README.md
 ```
-
-`05_bayesian_networks` is not started yet.
 
 ## Code
 
@@ -64,6 +70,11 @@ Solutions for the five AI course lab assignments. Each lab has its own folder, w
 - `src/planner.pl`, `src/road.pl`: the Prolog knowledge bases for the optional extension.
 - `src/prolog_verifier.py`: checks the moves in a plan against `planner.pl` (needs SWI-Prolog).
 
+### 05_bayesian_networks
+- `src/language_model.py`: word-level Markov language models built from counts, viewed as Bayesian networks. `FirstOrderModel` and `SecondOrderModel` share one implementation, with the normalisation check and greedy and sampling generation.
+- `src/test_language_model.py`: pytest tests against hand counts, an independent recount and the probabilistic invariants.
+- `src/bn_experiments.py`: the CPTs, predictions, generation and model comparison reported in `answers.md`. It writes the generated sentences to `src/outputs/`.
+
 ## Running
 
 ```
@@ -85,6 +96,10 @@ cd ../../04_logic/src
 python planner.py
 python logic_experiments.py
 python prolog_verifier.py
+pytest
+
+cd ../../05_bayesian_networks/src
+python bn_experiments.py
 pytest
 ```
 
